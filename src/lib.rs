@@ -1,5 +1,5 @@
 #![warn(clippy::all, clippy::pedantic, clippy::nursery, clippy::cargo)]
-use color_eyre::{eyre::eyre, Report};
+use eyre::{eyre, Report};
 use k8s_openapi::apimachinery::pkg::api::resource::Quantity;
 use regex::Regex;
 
