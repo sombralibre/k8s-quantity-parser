@@ -9,6 +9,7 @@ homepage = "https://github.com/sombralibre/k8s-quantity-parser"
 repository = "https://github.com/sombralibre/k8s-quantity-parser"
 keywords = ["parser", "k8s_openapi", "quantity"]
 categories = ["parsing", "parser-implementations"]
+documentation = "https://docs.rs/k8s_quantity_parser/0.0.1"
 
 [dependencies]
 k8s-openapi = { version = "0.14", default-features = false, features = ["v1_22"] }
