@@ -55,9 +55,9 @@ pub trait QuantityParser {
     /// # use k8s_openapi::apimachinery::pkg::api::resource::Quantity;
     /// # use k8s_quantity_parser::QuantityParser;
     /// #
-    /// let mib = Quantity("1Mi".into());
-    /// let ret: i64 = 1048576;
-    /// assert_eq!(mib.to_bytes().ok().flatten().unwrap(), ret);
+    /// let cpu = Quantity("4".into());
+    /// let ret: i64 = 4000;
+    /// assert_eq!(cpu.to_milli_cpus().ok().flatten().unwrap(), ret)
     /// ```
     ///
     /// # Errors
@@ -71,9 +71,9 @@ pub trait QuantityParser {
     /// # use k8s_openapi::apimachinery::pkg::api::resource::Quantity;
     /// # use k8s_quantity_parser::QuantityParser;
     /// #
-    /// let cpu = Quantity("4".into());
-    /// let ret: i64 = 4000;
-    /// assert_eq!(cpu.to_milli_cpus().ok().flatten().unwrap(), ret)
+    /// let mib = Quantity("1Mi".into());
+    /// let ret: i64 = 1048576;
+    /// assert_eq!(mib.to_bytes().ok().flatten().unwrap(), ret);
     /// ```
     ///
     /// # Errors
